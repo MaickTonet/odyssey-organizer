@@ -16,10 +16,16 @@ function Card() {
           doloribus atque possimus.
         </p>
       </div>
-      <div className="flex gap-2 justify-around md:items-center">
-        <Trash2 size={28} color="#ffffff" className="hidden md:flex" />
-        <Pencil size={28} color="#ffffff" />
-        <CircleCheck size={28} color="#ffffff" className="hidden md:flex" />
+      <div className="flex gap-2 items-start md:justify-evenly md:items-center">
+        <button className="hidden md:flex hover:scale-110  ease-in-out duration-300">
+          <Trash2 size={28} color="#ffffff" />
+        </button>
+        <button className="hover:scale-110 ease-in-out duration-300">
+          <Pencil size={28} color="#ffffff" />
+        </button>
+        <button className="hidden md:flex hover:scale-110 ease-in-out duration-300">
+          <CircleCheck size={28} color="#ffffff" className="hidden md:flex" />
+        </button>
       </div>
     </div>
   );

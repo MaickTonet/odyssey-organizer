@@ -1,11 +1,12 @@
-function Foote() {
+export function Footer() {
   return (
-    <div className="bg-primary py-4 flex items-center justify-center">
-      <p className="text-white font-sans font-bold tracking-wide">
-        Odyssey Organizer
-      </p>
+    <div className="bg-primary pb-8 flex items-center justify-center">
+      <img
+        src="public/odyssey-organizer-logo-footer.png"
+        alt="Logo Odyssey Organizer"
+        draggable={false}
+        className="w-28"
+      />
     </div>
   );
 }
-
-export default Foote;

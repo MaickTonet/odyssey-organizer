@@ -9,7 +9,6 @@ export default {
       colors: {
         primary: '#202C39',
         secondary: '#283845',
-        components: '#4169E1',
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],

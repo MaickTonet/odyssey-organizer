@@ -1,7 +1,7 @@
 import { Filter, LibraryBig, Plus } from "lucide-react";
-import Header from "../components/header";
-import CardList from "../components/cardList";
-import Footer from "../components/footer";
+import { Header } from "../components/header";
+import { CardList } from "../components/cardList";
+import { Footer } from "../components/footer";
 
 function Home() {
   return (
@@ -12,15 +12,22 @@ function Home() {
           Olá, Maick
         </h2>
         <div className="flex flex-row gap-6 ">
-          <Plus size={36} color="#ffffff" />
-          <Filter size={36} color="#ffffff" />
-          <LibraryBig size={36} color="#ffffff" className="hidden md:flex" />
+          <button className="hover:scale-110 ease-in-out duration-300">
+            <Plus size={36} color="#ffffff" />
+          </button>
+          <button className="hover:scale-110 ease-in-out duration-300">
+            <Filter size={36} color="#ffffff" />
+          </button>
+          <button className="hidden md:flex hover:scale-110 ease-in-out	duration-300">
+            <LibraryBig size={36} color="#ffffff" />
+          </button>
         </div>
       </div>
       <hr className="mx-3 border-white/70 mb-8 md:mx-[10%]" />
-      <div className="md:px-[10%]">
-        <CardList title="Para hoje" />
-        <CardList title="Esta semana" />
+      <div className="md:px-[5%]">
+        <CardList title="Para hoje" autoPlay={true} />
+        <CardList title="Esta semana" autoPlay={false} />
+        <CardList title="Lembretes" autoPlay={false} />
       </div>
       <Footer />
     </div>
