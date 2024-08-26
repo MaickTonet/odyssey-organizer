@@ -1,7 +1,8 @@
-import { Filter, LibraryBig, Plus } from "lucide-react";
+import { Filter, LibraryBig } from "lucide-react";
 import { Header } from "../components/header";
 import { CardList } from "../components/cardList";
 import { Footer } from "../components/footer";
+import AddTaskModal from "../components/addTaskModal";
 
 function Home() {
   return (
@@ -12,9 +13,7 @@ function Home() {
           Olá, Maick
         </h2>
         <div className="flex flex-row gap-6 ">
-          <button className="hover:scale-110 ease-in-out duration-300">
-            <Plus size={36} color="#ffffff" />
-          </button>
+          <AddTaskModal />
           <button className="hover:scale-110 ease-in-out duration-300">
             <Filter size={36} color="#ffffff" />
           </button>
